@@ -1,6 +1,6 @@
 # Harry Potter Zone
 
-![](https://www.potterapi.com/)
+![](https://media.giphy.com/media/R6xi8dXsRhIjK/giphy.gif)
 ^ me coding this week!
 
 ## Project Description
