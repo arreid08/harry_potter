@@ -8,57 +8,23 @@ import "./Main.css";
 
 function Main() {
 
-    const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
-  
-    const fetchAPICharacters = () => {
-        fetch(`https://www.potterapi.com/v1/characters${key}`)
-        .then(res => res.json())
-        .then(potter => {
-            console.log('Main API Characters', potter)
-        })
-    }
-
-    const fetchAPIHouses = () => {
-        fetch(`https://www.potterapi.com/v1/houses${key}`)
-        .then(res => res.json())
-        .then(potter => {
-          console.log('Main API Houses', potter)
-        })
-    }
-
-    const fetchAPISpells = () => {
-        fetch(`https://www.potterapi.com/v1/spells${key}`)
-        .then(res => res.json())
-        .then(potter => {
-            console.log('Main API Spells', potter)
-        })
-    }
-
-    const fetchAPISorting = () => {
-        fetch(`https://www.potterapi.com/v1/sortingHat${key}`)
-        .then(res => res.json())
-        .then(potter => {
-            console.log('Main API Sorting Hat', potter)
-        })
-    }
-
     return (
         <>
             <div className='grid'>
-                <Link to='/characters' onClick={fetchAPICharacters} className='characterGrid'>
-                    <img></img>
+                <Link to='/characters' className='characterGrid'>
+                    <img src='/images/Characters.jpg' alt='Characters'></img>
                     <Characters />
                 </Link>
-                <Link to='/houses' onClick={fetchAPIHouses} className='houseGrid'>
-                    <img></img>
+                <Link to='/houses' className='houseGrid'>
+                    <img src='/images/Houses.jpg' alt='Houses'></img>
                     <Houses />
                 </Link>
-                <Link to='/spells' onClick={fetchAPISpells} className='spellGrid'>
-                    <img></img>
+                <Link to='/spells' className='spellGrid'>
+                    <img src='/images/Spells.jpg' alt='Spells'></img>
                     <Spells />
                 </Link>
-                <Link to='/sortingHat' onClick={fetchAPISorting} className='sortingGrid'>
-                    <img></img>
+                <Link to='/sortingHat' className='sortingGrid'>
+                    <img src='/images/SortingHat.jpg' alt='sortinghat'></img>
                     <SortingHat />
                 </Link>
             </div>
