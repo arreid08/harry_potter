@@ -1,7 +1,7 @@
 # Harry Potter Zone
 
-![](https://media.giphy.com/media/R6xi8dXsRhIjK/giphy.gif)
-<--- me coding this app!
+<!-- ![](https://media.giphy.com/media/R6xi8dXsRhIjK/giphy.gif)
+<--- me coding this app! -->
 
 ## Project Description
 
@@ -23,12 +23,15 @@ Define the the React components and the architectural design of your app.
 ### MVP/PostMVP
 
 #### MVP
-- Find and use external api 
-- Render data on page 
-- Allow user to interact with the page
+- Find an external API for Harry Potter info.
+- Develop an app that displays the info and can be interacted with.
+- Create links to each category (characters, houses, spells)
+- Show a sorting hat on the main page to use for sorting the user into a house.
+- Create pages for each of the categories to display details on.
+- Use the Harry Potter font on my page.
 
 #### PostMVP EXAMPLE
-
+- Find a second API with images for Harry Potter
 - Add a place to save your favorite characters or spells.
 - Log which house the user was placed in even if the page refreshes.
 
@@ -38,7 +41,6 @@ Define the the React components and the architectural design of your app.
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
 | Main | This will render the main page | 
 | Characters | This will render characters page | 
 | Character Details | This will render the character details page | 
@@ -47,17 +49,19 @@ Define the the React components and the architectural design of your app.
 | Sorting Hat | This will render the sorting hat page showing the house you are in | 
 
 ## Time Frames
-<!-- 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evaluate game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize. -->
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create all initial files and initial React setup | H | 4hrs|  |  |
-| Connect to API and show it responding | H | 4hrs|  |  |
-| Develop code for each component | H | 16hrs|  |  |
-| Stylize the app | H | 5hrs|  |  |
-| Work on final documentation | H | 3hrs|  |  |
-| Total | H | 32hrs|  |  |
+| Planning | H | 4hrs | 3hrs |  |
+| Create all initial files and initial React setup | H | 3hrs | 1hr |  |
+| Connect to API and show it responding | H | 2hrs |  |  |
+| Develop code for App | H | 2hrs |  |  |
+| Develop code for Header and Main | H | 4hrs |  |  |
+| Develop code for characters, houses, and spells | H | 8hrs |  |  |
+| Develop code for sorting hat page | H | 3hrs |  |  |
+| Stylize the app | H | 5hrs |  |  |
+| Work on final documentation | H | 3hrs |  |  |
+| Total | H | 34hrs |  |  |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, etc.  -->
