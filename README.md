@@ -1,7 +1,7 @@
 # Harry Potter Zone
 
 ![](https://media.giphy.com/media/R6xi8dXsRhIjK/giphy.gif)
-^ me coding this week!
+<--- me coding this app!
 
 ## Project Description
 
