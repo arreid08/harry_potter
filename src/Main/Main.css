@@ -1,0 +1,27 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 100px;
+
+}
+
+.characterGrid {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.houseGrid {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.spellGrid {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.sortingGrid {
+    grid-row: 2;
+    grid-column: 2;
+}
