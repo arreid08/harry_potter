@@ -1,9 +1,14 @@
 .headerTitle {
     background-color: #592222;
     margin: 0;
-    height: 50px;
-    color: #BFA34E;
+    height: 100px;
+    color: #A68549;
     text-align: center;
     padding: 20px;
+    text-decoration: none;
+    font-size: 80px;
+}
+
+.headerLink {
     text-decoration: none;
 }

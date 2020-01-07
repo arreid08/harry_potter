@@ -1,13 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Spells.css";
 
 function Spells () {
 
-    // acts as a componentDidUpdate
+    const [spells, setCharacters] = useState([])
+
     useEffect( () => {
-        console.log('componentDidUpdate')
-        {fetchAPISpells()}
-    })
+        fetchAPISpells()
+    }, [])
 
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
   
@@ -15,14 +16,31 @@ function Spells () {
         fetch(`https://www.potterapi.com/v1/spells${key}`)
         .then(res => res.json())
         .then(potter => {
-            console.log('Spells Fetch', potter)
+            const spellNames = potter
+            console.log('Spell Fetch', potter)
+            setCharacters(spellNames)
         })
     }
 
+    const spellNames = spells.map(names => {
+        return(
+            <div className='names' key={names.spell}>
+                <Link to={'/spells/' + names.spell} className='spellLink'>
+                    {names.spell}
+                </Link>
+            </div>
+        )
+    })
+
     return (
-    <>
-        <p>{fetchAPISpells}</p>
-    </>
+        <>
+            <header>
+                <h1 className='title'>Spells</h1>
+            </header>
+            <div className='spellsList'>
+                {spellNames}
+            </div>
+        </>
     )
 }
 

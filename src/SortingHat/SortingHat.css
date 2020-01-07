@@ -1,0 +1,14 @@
+.organize {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: #A68549;
+    text-align: center;
+}
+
+.sorted {
+    grid-row: 1;
+}
+
+.congrats {
+    grid-row: 2;
+}

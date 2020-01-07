@@ -1,28 +1,46 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Houses.css";
 
 function Houses () {
 
-    // acts as a componentDidUpdate
+    const [houses, setHouses] = useState([])
+
     useEffect( () => {
-        console.log('componentDidUpdate')
-        {fetchAPIHouses()}
-    })
+        fetchAPIHouses()
+    }, [])
 
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
 
     const fetchAPIHouses = () => {
         fetch(`https://www.potterapi.com/v1/houses${key}`)
         .then(res => res.json())
-        .then(potter => {
-          console.log('Houses Fetch', potter)
+        .then(potter => {            
+            const houseNames = potter
+            console.log('Houses Fetch', potter)
+            setHouses(houseNames)
         })
     }
 
+    const houNames = houses.map(house => {
+        return(
+            <div className='names' key={house.name}>
+                <Link to={'/characters/' + house.name} className='housesLink'>
+                    <p>{house.name}</p>
+                </Link>
+            </div>
+        )
+    })
+
     return (
-    <>
-        <p>{fetchAPIHouses}</p>
-    </>
+        <>
+            <header>
+                <h1 className='title'>Houses</h1>
+            </header>
+            <div className='houseList'>
+                {houNames}
+            </div>
+        </>
     )
 }
 

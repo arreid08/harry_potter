@@ -1,0 +1,19 @@
+.title {
+    text-align: center;
+    color: #A68549;
+}
+
+.characterLink {
+    text-decoration: none;
+    color: #A68549;
+}
+
+.names {
+    margin: 0 50px;
+    padding: 5px;
+}
+
+.charsList {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -6,7 +6,7 @@ function Header() {
 
     return (
         <nav>
-        <Link to='/home'>
+        <Link to='/home' className='headerLink'>
             <h1 className='headerTitle'>Harry Potter Zone</h1>
         </Link>
         </nav>

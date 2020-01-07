@@ -7,8 +7,7 @@ function Characters () {
     const [characters, setCharacters] = useState([])
 
     useEffect( () => {
-        console.log('componentDidMount')
-        {fetchAPICharacters()}
+        fetchAPICharacters()
     }, [])
 
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
@@ -26,8 +25,8 @@ function Characters () {
     const charNames = characters.map(names => {
         return(
             <div className='names' key={names.name}>
-                <Link to={'/characters/' + names.name}>
-                    <p>{names.name}</p>
+                <Link to={'/characters/' + names.name} className='characterLink'>
+                    {names.name}
                 </Link>
             </div>
         )
@@ -38,7 +37,7 @@ function Characters () {
             <header>
                 <h1 className='title'>Characters</h1>
             </header>
-            <div>
+            <div className='charsList'>
                 {charNames}
             </div>
         </>
