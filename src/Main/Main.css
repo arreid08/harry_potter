@@ -43,7 +43,6 @@ a:hover {
 .container {
     position: relative;
     text-align: center;
-    color: #ECEEF5;
 }
 
 .mainImage {
@@ -55,14 +54,18 @@ a:hover {
 
 .centered {
     position: absolute;
-    top: 50%;
+    bottom: 15px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: none;
+    color: #EFE5CE;
+    background-color: transparent;
+    font-size: 35px;
 }
 
 .intro {
     color: #A68549;
-    padding: 0 300px;
+    position: absolute;
+    left: 25%;
     width: 700px;
+    margin: 10px 0;
 }

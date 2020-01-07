@@ -22,6 +22,9 @@ function Houses () {
         })
     }
 
+    // create object for house pictures here.
+    // filter the object to show the pictures with the houses.
+
     const houNames = houses.map(house => {
         return(
             <div className='names' key={house.name}>
