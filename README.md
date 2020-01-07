@@ -16,7 +16,7 @@ This website was built to be a place to learn all about Harry Potter.  You can l
 
 - [Initial Wireframe](https://res.cloudinary.com/john-deere/image/upload/v1578321821/wireframe1_kifapa.jpg)
 	- this is my initial thinking of how I want my page to work.
-<!-- - [react architecture]() -->
+- ![react architecture](./images/React_Architecture)
 
 Define the the React components and the architectural design of your app.
 

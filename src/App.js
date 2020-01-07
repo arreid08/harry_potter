@@ -28,11 +28,11 @@ function App() {
             path='/houses'
             render={() => <Houses />} 
           />
-                    <Route 
+          <Route 
             path='/spells'
             render={() => <Spells />} 
           />
-                    <Route 
+          <Route 
             path='/sortingHat'
             render={() => <SortingHat />} 
           />

@@ -12,19 +12,18 @@ function Main() {
         <>
             <div className='grid'>
                 <Link to='/characters' className='characterGrid'>
-                    <img src='/images/Characters.jpg' alt='Characters'></img>
-                    <Characters />
+                    <img className='mainImage' src='/images/Characters.jpg' alt='Characters'></img>
                 </Link>
                 <Link to='/houses' className='houseGrid'>
-                    <img src='/images/Houses.jpg' alt='Houses'></img>
+                    <img className='mainImage' src='/images/Houses.jpg' alt='Houses'></img>
                     <Houses />
                 </Link>
                 <Link to='/spells' className='spellGrid'>
-                    <img src='/images/Spells.jpg' alt='Spells'></img>
+                    <img className='mainImage' src='/images/Spells.jpg' alt='Spells'></img>
                     <Spells />
                 </Link>
                 <Link to='/sortingHat' className='sortingGrid'>
-                    <img src='/images/SortingHat.jpg' alt='sortinghat'></img>
+                    <img className='mainImage' src='/images/SortingHat.png' alt='sortinghat'></img>
                     <SortingHat />
                 </Link>
             </div>
