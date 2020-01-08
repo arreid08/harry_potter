@@ -1,0 +1,17 @@
+.houseBox {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+}
+
+.houseTiesImg {
+    grid-column: 2;
+    width: 250px;
+    height: 350px;
+}
+
+.houseDetails {
+    color: #A68549;
+    grid-column: 3;
+    text-align: center;
+}

@@ -15,20 +15,21 @@ function Houses () {
     const fetchAPIHouses = () => {
         fetch(`https://www.potterapi.com/v1/houses${key}`)
         .then(res => res.json())
-        .then(potter => {            
-            const houseNames = potter
-            console.log('Houses Fetch', potter)
-            setHouses(houseNames)
+        .then(potter => {
+            setHouses(potter)
         })
     }
 
     // create object for house pictures here.
     // filter the object to show the pictures with the houses.
 
-    const houNames = houses.map(house => {
+   
+
+    const houNames = houses.map(house => { 
+        const houseId = house._id
         return(
-            <div className='names' key={house.name}>
-                <Link to={'/characters/' + house.name} className='housesLink'>
+            <div className='names' key={house._id}>
+                <Link to={'/houses/' + house._id} house={houseId} className='housesLink'>
                     <p>{house.name}</p>
                 </Link>
             </div>

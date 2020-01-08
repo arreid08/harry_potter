@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import CharacterDetails from './../CharacterDetails/CharacterDetails.js'
 import "./Characters.css";
 
 function Characters () {
@@ -17,9 +16,7 @@ function Characters () {
         fetch(`https://www.potterapi.com/v1/characters${key}`)
         .then(res => res.json())
         .then(potter => {
-            const characterNames = potter
-            console.log('characters', potter)
-            setCharacters(characterNames)
+            setCharacters(potter)
         })
     }
 
@@ -27,7 +24,6 @@ function Characters () {
         return(
             <div className='names' key={names.name}>
                 <Link to={'/characters/' + names.name} className='characterLink'>
-                    {/* <CharacterDetails character={names}/> */}
                     {names.name}
                 </Link>
             </div>

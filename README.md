@@ -56,16 +56,17 @@ This website was built to be a place to learn all about Harry Potter.  You can l
 | Develop code for App | H | 2hrs | 1hr | 1.5hrs |
 | Develop code for Header | H | 30mins | 20mins | 20mins |
 | Develop code for Main | H | 3.5hrs | 3hrs | 4hrs |
+| Develop code for Header | H | 30mins |  |  |
 | Develop code for characters page | H | 4hrs | 1hr | 2hr |
-| Develop code for character detail page | H | 4hrs | 3hr |  |
-| Develop code for houses page | H | 2hrs | 1hr |  |
-| Develop code for house detail page | H | 2hrs |  |  |
-| Develop code for spells page | H | 2hrs | 1hr |  |
-| Develop code for spell detail page | H | 2hrs |  |  |
+| Develop code for character detail page | H | 4hrs | 3hr | 4hrs |
+| Develop code for houses page | H | 2hrs | 1hr | 1.5hrs |
+| Develop code for house detail page | H | 2hrs | 4hrs |  |
+| Develop code for spells page | H | 2hrs | 1hr | 1.5hrs |
+| Develop code for spell detail page | H | 2hrs | 1hr |  |
 | Develop code for sorting hat page | H | 1hrs | 1hr | 1hr |
-| Stylize the app | H | 5hrs | 2hrs |  |
+| Stylize the app | H | 5hrs | 3hrs |  |
 | Work on final documentation | H | 3hrs |  |  |
-| Total | H | 37hrs | 16.5hrs | 14.5hrs |
+| Total | H | 37.5hrs | 24.5hrs | 21.5hrs |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, etc.  -->

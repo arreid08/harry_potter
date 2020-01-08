@@ -6,6 +6,7 @@ function CharacterDetails (props) {
     const [characterDetails, setCharacterDetails] = useState([])
 
     useEffect( () => {
+        console.log('CharacterDetails did mount')
         fetchAPICharacterDetails()
     }, [])
 
@@ -18,31 +19,39 @@ function CharacterDetails (props) {
         fetch(`https://www.potterapi.com/v1/characters${key}&name=${newName}`)
         .then(res => res.json())
         .then(potter => {
-            const characterDetails = potter
-            // console.log('CharacterDetails Fetch', potter)
-            setCharacterDetails(characterDetails)
+            setCharacterDetails(potter)
         })
     }
-
-
+   
+    console.log('CharacterDetails props', props)
     console.log('CharacterDetails', characterDetails)
     console.log('characterDetails[0]', characterDetails[0])
-
+    if (characterDetails.length === 0) {
+        return(
+            <div>
+                loading...
+            </div>
+        )
+    }
     return (
         <>
             <header>
-                <h1 className='title'>Name Here</h1>
+                <h1 className='title'>{characterDetails[0].name}</h1>
             </header>
-            <div className='charsList'>  
-                {/* {characterDetails.school} */}
-                {/* {characterDetails.house} */}
-                {/* {characterDetails.role} */}
-                {/* {characterDetails.bloodStatus} */}
-                {/* {characterDetails.species} */}
-                {/* {characterDetails.deathEater} */}
-                {/* {characterDetails.dumbledoresArmy} */}
-                {/* {characterDetails.orderOfThePhoenix} */}
-                {/* {characterDetails.ministryOfMagic} */}
+            <div className='charactersBox'>
+                <img className='hogwartsImg' src='/images/Hogwarts.jpg' alt='Hogwarts'></img>
+                <div className='charsDetails'>
+                    <h3>Stats:</h3>
+                    <p>{characterDetails[0].school}</p>
+                    <p>{characterDetails[0].house}</p>
+                    <p>{characterDetails[0].role}</p>
+                    <p>{characterDetails[0].bloodStatus}</p>
+                    <p>{characterDetails[0].species}</p>
+                    <p>{characterDetails[0].deathEater}</p>
+                    <p>{characterDetails[0].dumbledoresArmy}</p>
+                    <p>{characterDetails[0].orderOfThePhoenix}</p>
+                    <p>{characterDetails[0].ministryOfMagic}</p>
+                </div>
             </div>
         </>
     )
