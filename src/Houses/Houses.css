@@ -6,3 +6,11 @@
 .house-list {
     height: calc(80% - 140px);
 }
+
+.house-names {
+    color: #A68549;
+    margin: 0 25px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}

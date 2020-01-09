@@ -22,10 +22,10 @@ function Spells () {
                 <div className='names'>
                     {names.spell}
                 </div>
-                <div>
-                    <p className='spell-type'>{names.type}</p>
-                    <p className='spell-effect'>{names.effect}</p>    
-                </div>
+                <ul className='spells-list'>
+                    <li className='spell-type'>-{names.type}</li>
+                    <li className='spell-effect'>-{names.effect}</li>    
+                </ul>
             </div>
         )
     })

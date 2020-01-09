@@ -2,6 +2,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+    height: calc(80% - 160px);
 }
 
 .hogwarts-img {

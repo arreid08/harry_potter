@@ -18,7 +18,7 @@ function Characters () {
 
     const charNames = characters.map(names => {
         return(
-            <div className='names' key={names.name}>
+            <div className='char-names' key={names.name}>
                 <Link to={'/characters/' + names.name} className='character-link'>
                     {names.name}
                 </Link>

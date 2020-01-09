@@ -19,7 +19,7 @@ function Houses () {
     const houNames = houses.map(house => { 
         const houseId = house._id
         return(
-            <div className='names' key={house._id}>
+            <div className='house-names' key={house._id}>
                 <Link to={'/houses/' + house._id} house={houseId} className='houses-link'>
                     <p>{house.name}</p>
                 </Link>
