@@ -5,27 +5,17 @@ function CharacterDetails (props) {
 
     const [characterDetails, setCharacterDetails] = useState([])
 
-    useEffect( () => {
-        console.log('CharacterDetails did mount')
-        fetchAPICharacterDetails()
-    }, [])
-
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
     let newName = props.match.params.character.replace(' ','%20')
-  
-    console.log(`https://www.potterapi.com/v1/characters${key}&name=${newName}`)
 
-    const fetchAPICharacterDetails = () => {
+    useEffect( () => {
         fetch(`https://www.potterapi.com/v1/characters${key}&name=${newName}`)
         .then(res => res.json())
         .then(potter => {
             setCharacterDetails(potter)
         })
-    }
-   
-    console.log('CharacterDetails props', props)
-    console.log('CharacterDetails', characterDetails)
-    console.log('characterDetails[0]', characterDetails[0])
+    }, [])
+
     if (characterDetails.length === 0) {
         return(
             <div>
@@ -56,6 +46,5 @@ function CharacterDetails (props) {
         </>
     )
 }
-
   
 export default CharacterDetails;

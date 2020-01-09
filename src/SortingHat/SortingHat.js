@@ -5,20 +5,16 @@ function SortingHat () {
 
     const [sort, setSort] = useState([])
 
-    useEffect( () => {
-        fetchAPISortingHat()
-    }, [])
-
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
 
-    const fetchAPISortingHat = () => {
+    useEffect( () => {
         fetch(`https://www.potterapi.com/v1/sortingHat${key}`)
         .then(res => res.json())
         .then(potter => {          
             const sortedHouse = potter
             setSort(sortedHouse)
         })
-    }
+    }, [])
 
     return (
     <>
@@ -30,5 +26,4 @@ function SortingHat () {
     )
 }
 
-  
 export default SortingHat;

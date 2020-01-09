@@ -6,19 +6,15 @@ function Characters () {
 
     const [characters, setCharacters] = useState([])
 
-    useEffect( () => {
-        fetchAPICharacters()
-    }, [])
-
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
-  
-    const fetchAPICharacters = () => {
+
+    useEffect( () => {
         fetch(`https://www.potterapi.com/v1/characters${key}`)
         .then(res => res.json())
         .then(potter => {
             setCharacters(potter)
         })
-    }
+    }, [])
 
     const charNames = characters.map(names => {
         return(
@@ -29,7 +25,6 @@ function Characters () {
             </div>
         )
     })
-
     return (
         <>
             <header>
@@ -41,6 +36,5 @@ function Characters () {
         </>
     )
 }
-
   
 export default Characters;

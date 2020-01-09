@@ -6,13 +6,9 @@ function Spells () {
 
     const [spells, setCharacters] = useState([])
 
-    useEffect( () => {
-        fetchAPISpells()
-    }, [])
-
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
-  
-    const fetchAPISpells = () => {
+
+    useEffect( () => {
         fetch(`https://www.potterapi.com/v1/spells${key}`)
         .then(res => res.json())
         .then(potter => {
@@ -20,7 +16,7 @@ function Spells () {
             console.log('Spell Fetch', potter)
             setCharacters(spellNames)
         })
-    }
+    }, [])
 
     const spellNames = spells.map(names => {
         return(
@@ -31,7 +27,6 @@ function Spells () {
             </div>
         )
     })
-
     return (
         <>
             <header>
@@ -43,6 +38,5 @@ function Spells () {
         </>
     )
 }
-
   
 export default Spells;

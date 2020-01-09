@@ -6,24 +6,19 @@ function Houses () {
 
     const [houses, setHouses] = useState([])
 
-    useEffect( () => {
-        fetchAPIHouses()
-    }, [])
-
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
 
-    const fetchAPIHouses = () => {
+    useEffect( () => {
+        // fetchAPIHouses()
         fetch(`https://www.potterapi.com/v1/houses${key}`)
         .then(res => res.json())
         .then(potter => {
             setHouses(potter)
         })
-    }
+    }, [])
 
     // create object for house pictures here.
     // filter the object to show the pictures with the houses.
-
-   
 
     const houNames = houses.map(house => { 
         const houseId = house._id
@@ -35,7 +30,6 @@ function Houses () {
             </div>
         )
     })
-
     return (
         <>
             <header>
@@ -47,6 +41,5 @@ function Houses () {
         </>
     )
 }
-
   
 export default Houses;

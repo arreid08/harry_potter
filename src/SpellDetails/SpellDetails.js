@@ -5,20 +5,15 @@ function SpellDetails (props) {
 
     const [spellDetails, setSpellDetails] = useState([])
 
-    useEffect( () => {
-        console.log('SpellDetails did mount')
-        fetchAPISpellDetails()
-    }, [])
-
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
 
-    const fetchAPISpellDetails = () => {
+    useEffect( () => {
         fetch(`https://www.potterapi.com/v1/spells${key}&spell=${props.match.params.spell}`)
         .then(res => res.json())
         .then(potter => {
             setSpellDetails(potter)
         })
-    }
+    }, [])
    
     console.log('SpellDetails props', props)
     console.log('SpellDetails[0]', spellDetails[0])

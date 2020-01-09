@@ -32,7 +32,7 @@ function App() {
           />
           <Route 
             path='/houses/:house_id'
-            render={(props) => props.houseDetails ? (<HouseDetails {...props}/>) : ( <div></div>)} 
+            render={(props) => <HouseDetails {...props}/>} 
           />
           <Route 
             path='/houses'
