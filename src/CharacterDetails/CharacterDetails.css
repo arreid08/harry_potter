@@ -16,3 +16,8 @@
     text-align: center;
 }
 
+.linkBack {
+    text-decoration: none;
+    color: #A68549;
+    margin: 30px;
+}

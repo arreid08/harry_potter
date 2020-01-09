@@ -20,10 +20,14 @@ function Spells () {
 
     const spellNames = spells.map(names => {
         return(
-            <div className='names' key={names.spell}>
-                <Link to={'/spells/' + names.spell} className='spellLink'>
+            <div className='spellContainer'>
+                <div className='names' key={names.spell}>
                     {names.spell}
-                </Link>
+                </div>
+                <div>
+                    <p className='spellType' key={names.type}>{names.type}</p>
+                    <p className='spellEffect' key={names.effect}>{names.effect}</p>    
+                </div>
             </div>
         )
     })

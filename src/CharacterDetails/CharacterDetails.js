@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./CharacterDetails.css";
 
 function CharacterDetails (props) {
@@ -27,6 +28,9 @@ function CharacterDetails (props) {
         <>
             <header>
                 <h1 className='title'>{characterDetails[0].name}</h1>
+                <Link to='/characters' className='linkBack'>
+                    back to characters
+                </Link>
             </header>
             <div className='charactersBox'>
                 <img className='hogwartsImg' src='/images/Hogwarts.jpg' alt='Hogwarts'></img>

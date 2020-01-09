@@ -1,14 +1,49 @@
+.spellContainer {
+    display: grid;
+    grid-template-rows: .25fr .25fr .25fr;
+    grid-row-gap: 5px;
+    border: 1px solid #592222;
+    border-radius: 10px;
+    justify-content: center;
+    width: 200px;
+    height: 155px;
+    margin: 3px;
+}
+
 .spellLink {
     text-decoration: none;
     color: #A68549;
 }
 
 .names {
-    margin: 0 50px;
+    grid-row: 1;
+    color: #A68549;
+    margin: 0 25px;
     padding: 5px;
 }
 
 .spellsList {
     display: flex;
     flex-wrap: wrap;
+    margin: 10px;
+}
+
+.spellType {
+    grid-row: 2;
+    color: #A68549;
+    padding: 0 0 0 10px;
+    margin: 10px 10px;
+}
+
+.spellEffect {
+    grid-row: 3;
+    color: #A68549;
+    padding: 0 0 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+
+.title {
+    font-size: 50px;
 }

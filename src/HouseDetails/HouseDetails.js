@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./HouseDetails.css";
 
 function HouseDetails (props) {
@@ -26,6 +27,9 @@ function HouseDetails (props) {
         <>
             <header>
                 <h1 className='title'>{houseDetails[0].name}</h1>
+                <Link to='/houses' className='linkBack'>
+                    back to houses
+                </Link>
             </header>
             <div className='houseBox'>
                 <img className='houseTiesImg' src='/images/house_ties.jpg' alt='Hogwarts'></img>
