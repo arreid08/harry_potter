@@ -7,7 +7,7 @@
 
 This website was built to be a place to learn all about Harry Potter.  You can learn about the key characters, the houses and common spells.  You can also try your hand at the sorting hat to see which house you would be place in if you were a wizard.
 
-Check out the full website *[here](https://laughing-spence-9236ca.netlify.com/home)
+Check out the full website [here](https://laughing-spence-9236ca.netlify.com)
 
 ## Project Links
 
@@ -18,7 +18,7 @@ Check out the full website *[here](https://laughing-spence-9236ca.netlify.com/ho
 
 - [Initial Wireframe](https://res.cloudinary.com/john-deere/image/upload/v1578321821/wireframe1_kifapa.jpg)
 	- this is my initial thinking of how I want my page to work.
-- [react architecture](https://res.cloudinary.com/john-deere/image/upload/v1578413451/React_Architecture_ejlnlj.png)
+- [react architecture](https://res.cloudinary.com/john-deere/image/upload/v1578591005/React_Architecture_hgg5ln.png)
 
 ### MVP/PostMVP
 
