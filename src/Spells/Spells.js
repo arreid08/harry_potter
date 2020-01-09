@@ -18,13 +18,13 @@ function Spells () {
 
     const spellNames = spells.map(names => {
         return(
-            <div className='spell-container'>
-                <div className='names' key={names.spell}>
+            <div className='spell-container' key={names._id}>
+                <div className='names'>
                     {names.spell}
                 </div>
                 <div>
-                    <p className='spell-type' key={names.type}>{names.type}</p>
-                    <p className='spell-effect' key={names.effect}>{names.effect}</p>    
+                    <p className='spell-type'>{names.type}</p>
+                    <p className='spell-effect'>{names.effect}</p>    
                 </div>
             </div>
         )

@@ -15,7 +15,7 @@ function CharacterDetails (props) {
         .then(potter => {
             setCharacterDetails(potter)
         })
-    }, [])
+    }, [newName])
 
     if (characterDetails.length === 0) {
         return(

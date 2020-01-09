@@ -14,7 +14,7 @@ function HouseDetails (props) {
         .then(potter => {
             setHouseDetails(potter)
         })
-    }, [])
+    }, [props.match.params.house_id])
 
     if (houseDetails.length === 0) {
         return(

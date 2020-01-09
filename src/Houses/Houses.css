@@ -2,3 +2,7 @@
     text-decoration: none;
     color: #A68549;
 }
+
+.house-list {
+    height: calc(80% - 140px);
+}
