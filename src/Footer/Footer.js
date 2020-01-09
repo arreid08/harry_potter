@@ -6,7 +6,7 @@ function Footer() {
 
     return (
         <nav>
-            <p className='footerTitle'>Created by: Amy Reid 2020</p>
+            <p className='footer-title'>Created by: Amy Reid 2020</p>
         </nav>
     )
 }

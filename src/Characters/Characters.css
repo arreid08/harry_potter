@@ -3,7 +3,7 @@
     color: #A68549;
 }
 
-.characterLink {
+.character-link {
     text-decoration: none;
     color: #A68549;
 }
@@ -13,7 +13,7 @@
     padding: 5px;
 }
 
-.charsList {
+.chars-list {
     display: flex;
     flex-wrap: wrap;
 }

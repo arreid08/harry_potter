@@ -1,6 +1,5 @@
 div {
     background-color: #0D0D0D;
-    background-size: auto;
 }
 .grid {
     display: grid;
@@ -13,25 +12,25 @@ a:hover {
     transform: scale(1.1);
 }
 
-.characterGrid {
+.character-grid {
     grid-row: 3 / span 4;
     grid-column: 1;
     text-decoration: none;
 }
 
-.houseGrid {
+.house-grid {
     grid-row: 2 / span 3;
     grid-column: 2;
     text-decoration: none;
 }
 
-.spellGrid {
+.spell-grid {
     grid-row: 3 / span 4;
     grid-column: 3;
     text-decoration: none;
 }
 
-.sortingGrid {
+.sorting-grid {
     grid-row: 4 / span 5;
     grid-column: 2;
     text-decoration: none;
@@ -42,7 +41,7 @@ a:hover {
     text-align: center;
 }
 
-.mainImage {
+.main-image {
     width: 350px;
     height: 250px;
     padding: 20px;

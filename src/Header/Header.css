@@ -1,4 +1,4 @@
-.headerTitle {
+.header-title {
     background-color: #592222;
     margin: 0;
     height: 100px;
@@ -9,6 +9,6 @@
     font-size: 80px;
 }
 
-.headerLink {
+.header-link {
     text-decoration: none;
 }

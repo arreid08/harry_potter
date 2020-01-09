@@ -6,8 +6,8 @@ function Header() {
 
     return (
         <nav>
-        <Link to='/home' className='headerLink'>
-            <h1 className='headerTitle'>Harry Potter Zone</h1>
+        <Link to='/home' className='header-link'>
+            <h1 className='header-title'>Harry Potter Zone</h1>
         </Link>
         </nav>
     )

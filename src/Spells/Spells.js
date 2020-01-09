@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./Spells.css";
 
 function Spells () {
@@ -13,20 +12,19 @@ function Spells () {
         .then(res => res.json())
         .then(potter => {
             const spellNames = potter
-            console.log('Spell Fetch', potter)
             setCharacters(spellNames)
         })
     }, [])
 
     const spellNames = spells.map(names => {
         return(
-            <div className='spellContainer'>
+            <div className='spell-container'>
                 <div className='names' key={names.spell}>
                     {names.spell}
                 </div>
                 <div>
-                    <p className='spellType' key={names.type}>{names.type}</p>
-                    <p className='spellEffect' key={names.effect}>{names.effect}</p>    
+                    <p className='spell-type' key={names.type}>{names.type}</p>
+                    <p className='spell-effect' key={names.effect}>{names.effect}</p>    
                 </div>
             </div>
         )
@@ -36,7 +34,7 @@ function Spells () {
             <header>
                 <h1 className='title'>Spells</h1>
             </header>
-            <div className='spellsList'>
+            <div className='spells-list'>
                 {spellNames}
             </div>
         </>

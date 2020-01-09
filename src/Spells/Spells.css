@@ -1,4 +1,4 @@
-.spellContainer {
+.spell-container {
     display: grid;
     grid-template-rows: .25fr .25fr .25fr;
     grid-row-gap: 5px;
@@ -10,11 +10,6 @@
     margin: 3px;
 }
 
-.spellLink {
-    text-decoration: none;
-    color: #A68549;
-}
-
 .names {
     grid-row: 1;
     color: #A68549;
@@ -22,20 +17,20 @@
     padding: 5px;
 }
 
-.spellsList {
+.spells-list {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
 }
 
-.spellType {
+.spell-type {
     grid-row: 2;
     color: #A68549;
     padding: 0 0 0 10px;
     margin: 10px 10px;
 }
 
-.spellEffect {
+.spell-effect {
     grid-row: 3;
     color: #A68549;
     padding: 0 0 0 10px;

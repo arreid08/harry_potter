@@ -19,7 +19,7 @@ function Characters () {
     const charNames = characters.map(names => {
         return(
             <div className='names' key={names.name}>
-                <Link to={'/characters/' + names.name} className='characterLink'>
+                <Link to={'/characters/' + names.name} className='character-link'>
                     {names.name}
                 </Link>
             </div>
@@ -30,7 +30,7 @@ function Characters () {
             <header>
                 <h1 className='title'>Characters</h1>
             </header>
-            <div className='charsList'>
+            <div className='chars-list'>
                 {charNames}
             </div>
         </>

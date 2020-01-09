@@ -10,9 +10,8 @@ function SortingHat () {
     useEffect( () => {
         fetch(`https://www.potterapi.com/v1/sortingHat${key}`)
         .then(res => res.json())
-        .then(potter => {          
-            const sortedHouse = potter
-            setSort(sortedHouse)
+        .then(potter => {
+            setSort(potter)
         })
     }, [])
 

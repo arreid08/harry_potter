@@ -27,13 +27,13 @@ function HouseDetails (props) {
         <>
             <header>
                 <h1 className='title'>{houseDetails[0].name}</h1>
-                <Link to='/houses' className='linkBack'>
+                <Link to='/houses' className='link-back'>
                     back to houses
                 </Link>
             </header>
-            <div className='houseBox'>
-                <img className='houseTiesImg' src='/images/house_ties.jpg' alt='Hogwarts'></img>
-                <div className='houseDetails'>
+            <div className='house-box'>
+                <img className='house-ties-img' src='/images/house_ties.jpg' alt='Hogwarts'></img>
+                <div className='house-details'>
                     <h3>Stats:</h3>
                     <p>House Founder:  {houseDetails[0].founder}</p>
                     <p>Head of House:  {houseDetails[0].headOfHouse}</p>

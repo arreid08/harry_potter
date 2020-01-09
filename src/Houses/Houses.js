@@ -9,7 +9,6 @@ function Houses () {
     const key = '?key=$2a$10$v1mBd78O90nZknSpD9943.fNzwPGQoyrIYTuhjXPPHBUQETkzNeNq'
 
     useEffect( () => {
-        // fetchAPIHouses()
         fetch(`https://www.potterapi.com/v1/houses${key}`)
         .then(res => res.json())
         .then(potter => {
@@ -17,14 +16,11 @@ function Houses () {
         })
     }, [])
 
-    // create object for house pictures here.
-    // filter the object to show the pictures with the houses.
-
     const houNames = houses.map(house => { 
         const houseId = house._id
         return(
             <div className='names' key={house._id}>
-                <Link to={'/houses/' + house._id} house={houseId} className='housesLink'>
+                <Link to={'/houses/' + house._id} house={houseId} className='houses-link'>
                     <p>{house.name}</p>
                 </Link>
             </div>
@@ -35,7 +31,7 @@ function Houses () {
             <header>
                 <h1 className='title'>Houses</h1>
             </header>
-            <div className='houseList'>
+            <div className='house-list'>
                 {houNames}
             </div>
         </>

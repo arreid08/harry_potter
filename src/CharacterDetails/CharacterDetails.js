@@ -28,13 +28,13 @@ function CharacterDetails (props) {
         <>
             <header>
                 <h1 className='title'>{characterDetails[0].name}</h1>
-                <Link to='/characters' className='linkBack'>
+                <Link to='/characters' className='link-back'>
                     back to characters
                 </Link>
             </header>
-            <div className='charactersBox'>
-                <img className='hogwartsImg' src='/images/Hogwarts.jpg' alt='Hogwarts'></img>
-                <div className='charsDetails'>
+            <div className='characters-box'>
+                <img className='hogwarts-img' src='/images/Hogwarts.jpg' alt='Hogwarts'></img>
+                <div className='chars-details'>
                     <h3>Stats:</h3>
                     <p>{characterDetails[0].school}</p>
                     <p>{characterDetails[0].house}</p>

@@ -14,7 +14,7 @@ import { Route, Switch, Redirect } from 'react-router-dom'
 function App() {
 
   return (
-    <>
+    <div className='app'>
       <Route path='/' render={() => <Redirect to='/home' />} />
       <Header />
       <Switch>
@@ -48,7 +48,7 @@ function App() {
           />
       </Switch>
       <Footer />
-    </>
+    </div>
   );
 }
 
