@@ -3,6 +3,7 @@
     grid-template-rows: 1fr 1fr;
     color: #A68549;
     text-align: center;
+    height: calc(80% - 15px);
 }
 
 .sorted {
