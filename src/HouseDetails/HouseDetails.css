@@ -1,7 +1,7 @@
 .house-box {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr 2.5fr .5fr;
     height: calc(80% - 160px);
 }
 
@@ -17,8 +17,53 @@
     text-align: center;
 }
 
+.house-title {
+    display: inline-block;
+    color: #A68549;
+    margin: 50px 450px;
+}
+
 .link-back {
     text-decoration: none;
     color: #A68549;
-    margin: 30px;
+}
+
+.bold {
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.stats {
+    margin: 0;
+}
+
+.bold-h4 {
+    display: inline-block;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.inline{
+    display: inline-block;
+    width: 100px;
+}
+
+.house-p-tag {
+    margin: 0;
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: 1fr .1fr;
+    margin: 10px 0 0 220px;
+    max-width: 150px;
+}
+
+.table-values {
+    grid-column: 1;
+}
+
+.table-colors {
+    grid-column: 2;
 }

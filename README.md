@@ -4,11 +4,11 @@
 
 This website was built to be a place to learn all about Harry Potter.  You can learn about the key characters, the houses and common spells.  You can also try your hand at the sorting hat to see which house you would be place in if you were a wizard.
 
-Check out the full website [here](https://laughing-spence-9236ca.netlify.com)
-
 ## Project Links
 
 - [github repo](https://github.com/arreid08/harry_potter)
+- Check out the full website [here](https://laughing-spence-9236ca.netlify.com)
+- Also, check out my youTube video explaining the page [here](https://youtu.be/H9ysidDANso)
 
 ## Wireframes
 

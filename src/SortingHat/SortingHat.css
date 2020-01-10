@@ -1,15 +1,15 @@
 .organize {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr .5fr .5fr 1fr;
     color: #A68549;
     text-align: center;
     height: calc(80% - 15px);
 }
 
 .sorted {
-    grid-row: 1;
+    grid-row: 2;
 }
 
 .congrats {
-    grid-row: 2;
+    grid-row: 3;
 }

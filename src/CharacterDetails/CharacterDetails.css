@@ -20,5 +20,10 @@
 .link-back {
     text-decoration: none;
     color: #A68549;
-    margin: 30px;
+}
+
+.character-title {
+    display: inline-block;
+    color: #A68549;
+    margin: 50px 350px;
 }

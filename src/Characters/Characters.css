@@ -13,7 +13,8 @@
     padding: 5px;
 }
 
+
 .chars-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr)
 }

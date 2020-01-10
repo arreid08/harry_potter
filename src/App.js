@@ -36,7 +36,7 @@ function App() {
           />
           <Route 
             path='/houses'
-            render={() => <Houses />} 
+            render={() => <Houses />}
           />
           <Route 
             path='/spells'
